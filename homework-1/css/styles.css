@@ -86,7 +86,8 @@ address {
   border: 2px solid var(--color-primary-light);
   font-weight: 700;
   cursor: pointer;
-  font-family: 'Play', sans-serif;
+  font-family: 'Roboto', sans-serif;
+  font-size: 18px;
 }
 
 .button:hover {
