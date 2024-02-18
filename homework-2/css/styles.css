@@ -203,6 +203,7 @@ address {
 /* section about us */
 .about-us-section {
   position: relative;
+  margin-bottom: 375px;
 }
 
 .about-us-image1 {
@@ -237,16 +238,21 @@ address {
   text-transform: capitalize;
 }
 
+.about-us-content-block {
+  display: flex;
+  flex-wrap: wrap;
+}
+
 .about-us-text {
   font-size: 22px;
   line-height: 1.73;
   max-width: 650px;
-  margin-bottom: 375px;
 }
 
-.about-us-text-item {
+.about-us-text:not(:last-child) {
   margin-bottom: 40px;
 }
+
 
 .about-us-text-accent {
   text-transform: capitalize;
@@ -302,6 +308,7 @@ address {
 .why-us-text {
   color: var(--color-text-dark);
   line-height: 1.33;
+  margin: 0;
 }
 
 .section-title.centered {
@@ -339,7 +346,7 @@ address {
   gap: 32px;
   align-items: center;
   justify-content: center;
-  margin-bottom: 139px;
+  margin-bottom: 96px;
 }
 .our-procedures-text {
   margin-bottom: 0;
