@@ -1,0 +1,28 @@
+.our-procedures-container {
+  display: flex;
+  gap: 32px;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 96px;
+}
+.our-procedures-text {
+  margin-bottom: 0;
+  font-size: 22px;
+  line-height: 1.2;
+  color: var(--color-primary-white);
+  text-align: center;
+  max-width: 152px;
+  padding: 0 10px;
+}
+
+.our-procedures-list {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+  margin-bottom: 96px;
+  justify-content: space-between;
+}
+
+.our-procedures-title {
+  margin-bottom: 48px;
+}

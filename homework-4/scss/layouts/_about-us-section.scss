@@ -1,0 +1,58 @@
+.about-us-section {
+  position: relative;
+  margin-bottom: 375px;
+}
+
+.about-us-image1 {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: -52px 214px 0 0;
+}
+
+.about-us-image2 {
+  position: absolute;
+  right: 0;
+  top: 0;
+  margin: 332px 44px 0 0;
+}
+
+.section-title {
+  font-family: 'Play', sans-serif;
+  font-size: 64px;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.about-us-content-block {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.about-us-text {
+  font-size: 22px;
+  line-height: 1.73;
+  max-width: 650px;
+  margin-bottom: 40px;
+}
+
+.about-us-text:not(:last-child) {
+  margin-bottom: 40px;
+}
+
+.about-us-text-accent {
+  text-transform: capitalize;
+  font-weight: 700;
+}
+
+.about-us-content {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+}
+
+.about-us-photo {
+  border-radius: 50%;
+  height: 328px;
+}

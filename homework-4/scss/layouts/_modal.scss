@@ -1,0 +1,65 @@
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(1, 31, 74, 0.4);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px 0;
+  transition: opacity 0.2s, visibility 0.2s;
+
+
+  &.is-hidden {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+  }
+}
+
+.modal {
+  position: relative;
+  width: 100%;
+  max-width: 724px;
+  height: 100%;
+  max-height: 680px;
+  background-image: url(../images/background-form.png);
+  background-color: var(--color-primary-dark);
+  background-repeat: no-repeat;
+  background-position: center top;
+  border-radius: 48px;
+  padding: 42px 196px;
+  overflow-y: auto;
+
+
+  &__btn-close {
+    position: absolute;
+  top: 48px;
+  right: 48px;
+  fill: transparent;
+  stroke: var(--color-primary-white);
+  background-color: transparent;
+  cursor: pointer;
+  border: none;
+  }
+
+  &__title {
+    margin-bottom: 8px;
+    font-size: 32px;
+    font-weight: 900;
+    line-height: 1.5;
+    text-align: center;
+
+  }
+
+
+  &__form-field {
+    margin-bottom: 32px;
+  }
+
+  &__button {
+    margin: 0 auto 24px;
+  }
+}

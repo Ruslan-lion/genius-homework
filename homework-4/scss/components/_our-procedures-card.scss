@@ -1,0 +1,24 @@
+.our-procedures-card {
+  position: relative;
+  display: flex;
+  align-items: flex-end;
+  height: 456px;
+  padding: 32px 77px 32px 115px;
+  border-radius: 4px 120px;
+  background-image: linear-gradient(
+    180deg,
+    rgba(1, 28, 68, 0) 48.53%,
+    rgba(1, 28, 68, 0.73) 84.61%,
+    var(--color-primary-dark) 101.39%
+  );
+}
+
+.our-procedures-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  border-radius: 4px 120px;
+}

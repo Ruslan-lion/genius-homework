@@ -1,0 +1,29 @@
+.why-us-text {
+  color: var(--color-text-dark);
+  line-height: 1.33;
+  margin: 0;
+}
+
+.why-us-title {
+  margin-bottom: 48px;
+}
+
+.why-us-list {
+  display: flex;
+  gap: 56px;
+  justify-content: center;
+  margin-bottom: 96px;
+}
+
+.why-us-item {
+  max-width: 316px;
+  padding: 24px 32px;
+  text-align: center;
+  border-radius: 32px;
+  background: #fff;
+  box-shadow: 0px 4px 4px 0px rgba(168, 198, 245, 0.38);
+}
+
+.why-us-icon {
+  fill: var(--color-primary-light);
+}

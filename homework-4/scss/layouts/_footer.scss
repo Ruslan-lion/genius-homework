@@ -1,0 +1,83 @@
+.footer {
+  position: relative;
+  background-image: url(../images/footer-bg.png);
+  background-color: var(--color-primary-dark);
+  padding-top: 56px;
+}
+
+.container-map {
+  padding: 0 88px;
+}
+
+.footer-menu {
+  font-size: 16px;
+  color: var(--color-primary-white);
+  margin-bottom: 16px;
+}
+
+.address-link {
+  font-size: 16px;
+  color: var(--color-primary-white);
+  margin-bottom: 16px;
+  transition: all 0.2s;
+}
+
+.address-link:hover {
+  color: var(--color-primary-light);
+  transform: scale(1.05);
+}
+
+.address-copyright {
+  color: var(--color-secondary-light);
+  font-size: 13px;
+}
+
+.footer-icon {
+  fill: var(--color-primary-white);
+  margin-right: 16px;
+  transition: all 0.2s;
+}
+
+.footer-icon:hover {
+  fill: var(--color-primary-light);
+  transform: scale(1.1);
+}
+
+.footer-container {
+  display: flex;
+  gap: 20px;
+  padding-bottom: 56px;
+}
+
+.footer-nav,
+.footer-address {
+  display: flex;
+  flex-basis: 50%;
+  gap: 20px;
+}
+
+.footer-contacts {
+  display: flex;
+  gap: 186px;
+}
+
+.footer-address-info .footer-address-list {
+  display: flex;
+  gap: 16px;
+}
+
+.footer-logo,
+.footer-menu {
+  flex-grow: 1;
+}
+
+.footer::after {
+  position: absolute;
+  background-repeat: no-repeat;
+  background-image: url(../images/image-pipette_footer.png);
+  bottom: 0px;
+  content: '';
+  width: 245px;
+  height: 152px;
+  right: 0;
+}
