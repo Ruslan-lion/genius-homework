@@ -1,0 +1,117 @@
+.star-decoration {
+  position: relative;
+
+  &__star1 {
+    position: absolute;
+    left: -60px;
+    top: 376px;
+    fill: var(--color-primary-dark);
+    animation-name: scales-tab;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+
+    @media screen and (min-width: $bp-tablet) {
+      position: absolute;
+      left: -96px;
+      top: 360px;
+      fill: var(--color-primary-dark);
+      animation-name: scales;
+      animation-duration: 2s;
+      animation-iteration-count: infinite;
+      animation-timing-function: linear;
+    }
+
+    @media screen and (min-width: $bp-desktop) {
+      position: absolute;
+      left: 244px;
+      top: 364px;
+      fill: var(--color-primary-dark);
+      animation-name: scales;
+      animation-duration: 2s;
+      animation-iteration-count: infinite;
+      animation-timing-function: linear;
+    }
+  }
+
+  &__star2 {
+    display: none;
+
+    @media screen and (min-width: $bp-tablet) {
+      display: block;
+      position: absolute;
+      left: -52px;
+      top: 32px;
+      fill: var(--color-primary-light);
+      background-color: transparent;
+      animation-name: scales-tab;
+      animation-duration: 2s;
+      animation-iteration-count: infinite;
+      animation-timing-function: linear;
+    }
+
+    @media screen and (min-width: $bp-desktop) {
+      display: block;
+      position: absolute;
+      left: 644px;
+      top: 32px;
+      fill: var(--color-primary-light);
+      background-color: transparent;
+      animation-name: scales;
+      animation-duration: 2s;
+      animation-iteration-count: infinite;
+      animation-timing-function: linear;
+    }
+  }
+  &__star3 {
+    display: none;
+
+    @media screen and (min-width: $bp-tablet) {
+      display: block;
+      position: absolute;
+      top: 200px;
+      left: -56px;
+      fill: var(--color-secondary-light);
+      animation-name: scales-tab;
+      animation-duration: 2s;
+      animation-iteration-count: infinite;
+      animation-timing-function: linear;
+    }
+
+    @media screen and (min-width: $bp-desktop) {
+      display: block;
+      position: absolute;
+      top: 200px;
+      left: 632px;
+      fill: var(--color-secondary-light);
+      animation-name: scales;
+      animation-duration: 2s;
+      animation-iteration-count: infinite;
+      animation-timing-function: linear;
+    }
+  }
+}
+
+@keyframes scales {
+  0% {
+    transform: rotate(0deg) scale(1);
+  }
+  50% {
+    transform: rotate(180deg) scale(1.5);
+  }
+  100% {
+    transform: rotate(360deg) scale(1);
+  }
+}
+
+@keyframes scales-tab {
+  0% {
+    transform: rotate(0deg) scale(0.8);
+  }
+  50% {
+    transform: rotate(180deg) scale(1.2);
+  }
+  100% {
+    transform: rotate(360deg) scale(0.8);
+  }
+}

@@ -1,83 +1,181 @@
 .footer {
   position: relative;
+  padding: 32px 0;
+  overflow: hidden;
   background-image: url(../images/footer-bg.png);
   background-color: var(--color-primary-dark);
-  padding-top: 56px;
-}
 
-.container-map {
-  padding: 0 88px;
-}
+  @media screen and (min-width: $bp-tablet) {
+    padding: 56px 0;
+  }
 
-.footer-menu {
-  font-size: 16px;
-  color: var(--color-primary-white);
-  margin-bottom: 16px;
-}
+  &__container {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    align-items: center;
+    flex-basis: 50%;
 
-.address-link {
-  font-size: 16px;
-  color: var(--color-primary-white);
-  margin-bottom: 16px;
-  transition: all 0.2s;
-}
+    @media screen and (min-width: $bp-tablet) {
+      position: relative;
+      display: flex;
+      justify-content: center;
+      flex-direction: row;
+      gap: 20px;
+      align-items: flex-start;
+    }
+  }
 
-.address-link:hover {
-  color: var(--color-primary-light);
-  transform: scale(1.05);
-}
+  &__nav {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 50%;
+    gap: 42px;
+    justify-content: center;
+    align-items: center;
 
-.address-copyright {
-  color: var(--color-secondary-light);
-  font-size: 13px;
-}
+    @media screen and (min-width: $bp-tablet) {
+      display: flex;
+      flex-direction: row;
+      align-items: flex-start;
+      gap: 20px;
+    }
+  }
 
-.footer-icon {
-  fill: var(--color-primary-white);
-  margin-right: 16px;
-  transition: all 0.2s;
-}
+  &__nav-menu,
+  &__logo,
+  &__address-info {
+    flex-grow: 1;
+  }
 
-.footer-icon:hover {
-  fill: var(--color-primary-light);
-  transform: scale(1.1);
-}
+  &__nav-list {
+    text-align: center;
+    margin-bottom: 16px;
+    &:last-child {
+      margin-bottom: 0;
+    }
 
-.footer-container {
-  display: flex;
-  gap: 20px;
-  padding-bottom: 56px;
-}
+    @media screen and (min-width: $bp-tablet) {
+      text-align: left;
+    }
+  }
+  &__nav-link {
+    font-size: 16px;
+    color: var(--color-primary-white);
+    text-decoration: none;
+    transition: all 0.2s;
 
-.footer-nav,
-.footer-address {
-  display: flex;
-  flex-basis: 50%;
-  gap: 20px;
-}
+    &:hover {
+      color: var(--color-primary-light);
+      transform: scale(1.1);
+    }
+  }
 
-.footer-contacts {
-  display: flex;
-  gap: 186px;
-}
+  &__contacts {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-basis: 50%;
+    gap: 16px;
+    justify-content: center;
 
-.footer-address-info .footer-address-list {
-  display: flex;
-  gap: 16px;
-}
+    @media screen and (min-width: $bp-tablet) {
+      flex-direction: row;
+      align-items: flex-start;
+      justify-content: flex-start;
+      gap: 20px;
+    }
+  }
 
-.footer-logo,
-.footer-menu {
-  flex-grow: 1;
-}
+  &__address {
+    flex-basis: 50%;
+  }
 
-.footer::after {
-  position: absolute;
-  background-repeat: no-repeat;
-  background-image: url(../images/image-pipette_footer.png);
-  bottom: 0px;
-  content: '';
-  width: 245px;
-  height: 152px;
-  right: 0;
+  &__address-list {
+    margin-bottom: 16px;
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  &__address-link {
+    display: none;
+
+    font-size: 16px;
+    color: var(--color-primary-white);
+    text-decoration: none;
+    transition: all 0.2s;
+
+    &:hover {
+      color: var(--color-primary-light);
+      transform: scale(1.1);
+    }
+
+    @media screen and (min-width: $bp-tablet) {
+      display: block;
+    }
+  }
+
+  &__address-pol {
+    text-decoration: none;
+    font-size: 16px;
+    font-style: normal;
+    color: var(--color-primary-white);
+    margin-bottom: 16px;
+    text-align: center;
+
+    @media screen and (min-width: $bp-tablet) {
+      text-align: left;
+    }
+
+    &:hover {
+      color: var(--color-primary-light);
+      transform: scale(1.05);
+    }
+  }
+
+  &__address-copyright {
+    color: var(--color-secondary-light);
+    font-size: 13px;
+    margin-bottom: 16px;
+    text-align: center;
+
+    @media screen and (min-width: $bp-tablet) {
+      text-align: left;
+    }
+  }
+
+  &__contacts-icon {
+    fill: var(--color-primary-white);
+    margin-right: 0px;
+    transition: all 0.2s;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+
+    &:hover {
+      fill: var(--color-primary-light);
+      transform: scale(1.1);
+    }
+    @media screen and (min-width: $bp-tablet) {
+      margin-top: 16px;
+    }
+  }
+
+  &__image {
+    display: none;
+    position: absolute;
+    background-repeat: no-repeat;
+    background-image: url(../images/image-pipette_footer.png);
+    bottom: 0px;
+    content: '';
+    width: 245px;
+    height: 152px;
+    right: 0;
+
+    @media screen and (min-width: $bp-tablet) {
+      display: block;
+    }
+  }
 }

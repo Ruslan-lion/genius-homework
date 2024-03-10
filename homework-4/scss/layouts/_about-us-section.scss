@@ -1,58 +1,70 @@
 .about-us-section {
-  position: relative;
-  margin-bottom: 375px;
+  margin-bottom: 104px;
+
+  @media screen and (min-width: $bp-tablet) {
+    padding-top: 0;
+    margin-bottom: 176px;
+  }
+
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    gap: 28px;
+  }
+
+  &__title {
+    max-width: 264px;
+    margin-bottom: 24px;
+    font-size: 32px;
+
+    @media screen and (min-width: $bp-tablet) {
+      font-family: 'Play', sans-serif;
+      font-size: 64px;
+      font-weight: 700;
+      max-width: 529px;
+      margin-bottom: 40px;
+    }
+  }
+
+  &__content-block {
+    padding-top: 0;
+
+    @media screen and (min-width: $bp-desktop) {
+      padding-top: 40px;
+    }
+  }
+
+  &__text-provision {
+    font-size: 22px;
+    line-height: 1.73;
+    margin-bottom: 40px;
+    max-width: 710px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
 }
 
-.about-us-image1 {
-  position: absolute;
-  top: 0;
-  right: 0;
-  margin: -52px 214px 0 0;
-}
+.about-us-image {
+  display: none;
 
-.about-us-image2 {
-  position: absolute;
-  right: 0;
-  top: 0;
-  margin: 332px 44px 0 0;
-}
+  @media screen and (min-width: $bp-desktop) {
+    display: flex;
+    flex-direction: row-reverse;
+    flex-shrink: 0;
+  }
 
-.section-title {
-  font-family: 'Play', sans-serif;
-  font-size: 64px;
-  font-weight: 700;
-  line-height: normal;
-}
+  &__photos {
+    display: flex;
 
-.about-us-content-block {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-}
+    &:first-child {
+      align-items: flex-end;
+    }
+  }
 
-.about-us-text {
-  font-size: 22px;
-  line-height: 1.73;
-  max-width: 650px;
-  margin-bottom: 40px;
-}
-
-.about-us-text:not(:last-child) {
-  margin-bottom: 40px;
-}
-
-.about-us-text-accent {
-  text-transform: capitalize;
-  font-weight: 700;
-}
-
-.about-us-content {
-  position: relative;
-  display: flex;
-  justify-content: space-between;
-}
-
-.about-us-photo {
-  border-radius: 50%;
-  height: 328px;
+  &__photo {
+    border-radius: 50%;
+    height: 328px;
+  }
 }

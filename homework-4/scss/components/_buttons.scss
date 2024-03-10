@@ -1,6 +1,7 @@
 .button {
-  padding: 16px 32px;
-  margin-bottom: 14px;
+  display: block;
+  padding: 16px 24px;
+  margin: 0 auto 8px;
   color: var(--color-primary-white);
   border-radius: 32px;
   background: var(--color-primary-light);
@@ -8,11 +9,26 @@
   font-weight: 700;
   cursor: pointer;
   font-family: 'Roboto', sans-serif;
-  font-size: 18px;
+  font-size: 16px;
   transition: all 0.2s;
-}
 
-.button:hover {
-  color: var(--color-primary-dark);
-  background: transparent;
+  &:hover {
+    background-color: var(--color-primary-white);
+    color: var(--color-primary-dark);
+    border: 2px solid var(--color-primary-light);
+  }
+
+  @media screen and (min-width: $bp-tablet) {
+    padding: 16px 32px;
+    font-size: 16px;
+    margin-bottom: 14px;
+    display: inline;
+  }
+
+  @media screen and (min-width: $bp-desktop) {
+    padding: 16px 32px;
+    font-size: 18px;
+    margin-bottom: 14px;
+    display: inline;
+  }
 }

@@ -1,5 +1,17 @@
 .bg-wave {
   background-image: url(../images/background.png);
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: center 320px;
+
+  @media screen and (min-width: $bp-tablet) {
+    background-image: url(../images/background.png);
+    background-repeat: no-repeat;
+    background-position: center 460px;
+  }
+
+  @media screen and (min-width: $bp-desktop) {
+    background-image: url(../images/background.png);
+    background-repeat: no-repeat;
+    background-position: center 600px;
+  }
 }

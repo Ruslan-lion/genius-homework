@@ -1,0 +1,43 @@
+.our-procedures-section {
+  margin-bottom: 40px;
+  @media screen and (min-width: $bp-tablet) {
+    margin-bottom: 96px;
+  }
+
+  &__title {
+    margin-bottom: 24px;
+    color: var(--color-primary-dark);
+    font-family: 'Roboto', sans-serif;
+    font-size: 32px;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 24px;
+
+    @media screen and (min-width: $bp-tablet) {
+      font-family: 'Play', sans-serif;
+      font-size: 64px;
+      font-weight: 700;
+      margin-bottom: 48px;
+    }
+  }
+
+  &__slider {
+    display: flex;
+    gap: 32px;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__container {
+    overflow: hidden;
+    margin-bottom: 32px;
+  }
+
+  &__buttom {
+    display: none;
+
+    @media screen and (min-width: $bp-tablet) {
+      display: flex;
+    }
+  }
+}
